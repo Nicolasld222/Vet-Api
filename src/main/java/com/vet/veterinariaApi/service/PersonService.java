@@ -30,7 +30,7 @@ public class PersonService {
 
     public Mono<Paciente> update(Long id, Paciente newData) {
         return repository.findById(id)
-                .flatMap(existing -> repository.save(new Paciente(id, newData.tipo() , newData.dueño())));
+                .flatMap(existing -> repository.save(new Paciente(id, newData.tipo() , newData.dueno())));
     }
 
     public Mono<Void> delete(Long id) {
