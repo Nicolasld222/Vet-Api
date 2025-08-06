@@ -1,6 +1,6 @@
 spring:
   r2dbc:
-    url: r2dbc:mysql://localhost:3306/demo_reactive
+    url: r2dbc:mysql://localhost:3306/vet_api
     username: root
     password:
   datasource:
