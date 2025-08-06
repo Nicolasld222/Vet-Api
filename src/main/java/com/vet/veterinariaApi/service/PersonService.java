@@ -8,12 +8,12 @@ import reactor.core.publisher.Mono;
 
 @Service
 public class PersonService {
-
-    private final PacienteRepository repository;
+   private final PacienteRepository repository;
     private final PacienteRepository pacienteRepository;
 
-    public PersonService(PacienteRepository PacienteRepository pacienteRepository) {
+    public PersonService(PacienteRepository PacienteRepository, PacienteRepository pacienteRepository) {
         this.repository = pacienteRepository;
+        this.pacienteRepository = pacienteRepository;
     }
 
     public Mono<Paciente> create(Paciente paciente) {
